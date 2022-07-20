@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base { 
+    @font-face { 
+        font-family: "Geared Slab"; 
+        font-weight: normal; 
+        font-style: normal; 
+        src: url("../public/fonts/GearedSlab-Regular.woff2") format('woff2'), 
+        url("../public/fonts/GearedSlab-Regular.woff") format('woff')
+    }
+}
