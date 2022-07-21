@@ -28,24 +28,25 @@
                     <ul class="mt-12 text-center sm:flex sm:mt-0">
                         <li>
                             <button class="rounded bg-slate-50 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">
-                                <a href="#about">About Me</a>
+                                <a href="/">Home</a>
                             </button>
                         </li>
                         <li>
-                            <button class="rounded bg-slate-50 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">
-                                <a href="">Projects</a>
-                            </button>
+                            <a href="/projects">
+                                <button class="rounded bg-slate-50 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">Projects</button>
+                            </a>
                         </li>
                         <li>
-                            <button class="rounded bg-slate-50 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">
-                                <a href="">Blog</a>
-                            </button>
+                            <a href="/blog">
+                                <button class="rounded bg-slate-50 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">Blog</button>
+                            </a>
                         </li>
                         <li>
-                            <button class="rounded bg-cyan-150 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">
-                                <a href="">My Resume</a>
-                            </button>
+                            <a href="/projects">
+                                <button  class="rounded bg-cyan-150 w-36 h-12 mb-10 hover:bg-cyan-150 sm:mb-0">My Resume</button>
+                            </a>
                         </li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -61,7 +62,7 @@
                 </p>
 
                 <div class="mt-8 font-sans text-slate-600 text-sm sm:text-base">
-                    You can check out <u class="text-gray-900 font-bold">problems I've solved </u>or <u class="text-gray-900 font-bold">read my blog</u>, 
+                    You can check out <a href='/projects'><u class="text-gray-900 font-bold">problems I've solved </u></a> or <a href="/blog"><u class="text-gray-900 font-bold">read my blog</u></a>, 
                     where I share projects & tutorials on ML and data science.
                     <br><br>
                     By day, I'm a Machine Learning + Software Engineer. 
@@ -86,185 +87,218 @@
 
         <hr class="mt-8 border-spacing-5">
         
-        <!-- Projects Title -->
-        <div id="project-title" class="mt-4 text-center w-80 mx-auto sm:w-2/5">
-            <p class="font-slab text-2xl sm:text-3xl">My Projects</p>
-            <div class="h-2 mt-1 mx-auto text-center bg-cyan-150 w-14"></div>
-            <p class="font-sans text-slate-600 mt-4 text-sm sm:text-base">Personal and academic projects where I apply the theoretical concepts to solve real problems . . . or just build something fun!</p>
+        <div id="projects">
+            <!-- Projects Title -->
+            <div id="project-title" class="mt-4 text-center w-80 mx-auto sm:w-2/5">
+                <p class="font-slab text-2xl sm:text-3xl">Recent Projects</p>
+                <div class="h-2 mt-1 mx-auto text-center bg-cyan-150 w-14"></div>
+                <p class="font-sans text-slate-600 mt-4 text-sm sm:text-base">Personal and academic projects where I apply the theoretical concepts to solve real problems . . . or just build something fun!</p>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="mt-8 container flex flex-wrap gap-x-4 justify-between gap-y-4 mx-auto">
+
+                <div class="w-80 bg-white flex-grow-0 flex-shrink-0 h-96 shadow-2xl py-4 px-4 rounded-lg mx-auto">
+                        
+                    <div class="font-slab text-3xl text-gray-900">BetML</div>
+                    <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
+                    <p class="font-slab  text-gray-900 text-xl mt-4">
+                        <mark class="bg-yellow-200">Robust, ML-powered sports betting engines with 272% real annual ROI.</mark>
+                    </p>
+                    
+                    <p class="mt-2 text-slate-600 text-sm">
+                        BetML is a set of three projects (BetNBA, BetMLB, and BetNFL [WIP]), 
+                        which combine supervised learning and classical decision theory to place 
+                        optimal sports bets. BetML introduces more effective strategies to consider risk 
+                        than traditional risk aversion functions. It also improves the Kelly Criterion 
+                        sizing strategy to include a time delay on bet scaling to make . . .
+                    </p>
+                    <!-- <mark class="bg-cyan-150"><p class="mt-2 text-center text-slate-600 text-sm"><u>Read Papers & Learn More →</u></p></mark> -->
+                    <a href="/blog"><p class="mt-2 text-center"><u><mark class="bg-cyan-150 font-sans text-sm">Read Papers & Learn More →</mark></u></p></a>
+                </div>
+
+                <div class="w-80 bg-white flex-grow-0 flex-shrink-0 h-96 shadow-2xl py-4 px-4 rounded-lg mx-auto">
+                        
+                    <div class="font-slab text-3xl text-gray-900">Wo(R)d(L)e [WIP]</div>
+                    <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
+                    <p class="font-slab  text-gray-900 text-xl mt-4">
+                        <mark class="bg-yellow-200">Cracking Wordle with superhuman performance using reinforcement learning.</mark>
+                    </p>
+                    
+                    <p class="mt-2 text-slate-600 text-sm">
+                        The goal of Wo(R)d(L)e is to build algorithms to solve Wordle games to both 
+                        minimize the average score and the amount of human information/intuition required 
+                        using reinforcement learning. My inspiration for this project was reading the papers on AlphaGo and AlphaZero, the latter of which 
+                        doesn't use any human-expert . . . 
+                    </p>
+                    <!-- <mark class="bg-cyan-150"><p class="mt-2 text-center text-slate-600 text-sm"><u>Read Papers & Learn More →</u></p></mark> -->
+                    <a href="/blog"><p class="mt-2 text-center"><u><mark class="bg-cyan-150 font-sans text-sm">Read Papers & Learn More →</mark></u></p></a>
+                </div>
+
+                <div class="w-80 bg-white flex-grow-0 flex-shrink-0 h-96 shadow-2xl py-4 px-4 rounded-lg mx-auto">
+                        
+                    <div class="font-slab text-3xl text-gray-900">Optimize Disneyland</div>
+                    <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
+                    <p class="font-slab  text-gray-900 text-xl mt-4">
+                        <mark class="bg-yellow-200">Using traffic forecasting and markov queuing theory to reduce Disneyland wait times by 25%.</mark>
+                    </p>
+                    
+                    <p class="mt-2 text-slate-600 text-sm">
+                        The goal of Wo(R)d(L)e is to build algorithms to solve Wordle games to both 
+                        minimize the average score and the amount of human information/intuition required 
+                        using reinforcement learning. My inspiration for this project was reading the papers on AlphaGo and AlphaZero, the latter of which 
+                        doesn't use any human-expert . . . 
+                    </p>
+                    <!-- <mark class="bg-cyan-150"><p class="mt-2 text-center text-slate-600 text-sm"><u>Read Papers & Learn More →</u></p></mark> -->
+                    <a href="/blog"><p class="mt-2 text-center"><u><mark class="bg-cyan-150 font-sans text-sm">Read Papers & Learn More →</mark></u></p></a>
+                </div>    
+            </div>
+
+            <div class="my-10 mx-auto text-center">
+                <button class="bg-cyan-150 hover:bg-cyan-100 w-52 h-16 font-slab text-xl rounded">
+                    See All Projects
+                </button>
+            </div>
+       
         </div>
 
-        <!-- Project Cards -->
-        <div class="mt-8 container mx-auto grid grid-rows-none sm:grid-cols-2 sm:gap">
+        <hr class="border-spacing-5">    
+        
+        <div id="blog">
 
-            <!-- Project Card -- BetML -->
-            <div class="w-80 mb-10 sm:mb-20 sm:mx-auto sm:w-96">
-                <div class="mt-8 container flex justify-start">
-                    <div class="text-3xl font-slab  ">
-                        <span>BetML</span>
-                        <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
-                    </div>
-
-                    <div>
-                        <ul class="text-slate-600 container ml-8 mt-2 flex justify-between">
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div>Paper</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                                        </svg>
-                                    </div>
-                                    <div>Link</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-slab  text-gray-900 text-2xl mt-4">
-                        <mark class="bg-yellow-200">
-                            A series of robust, ML-powered sports betting engines with 272% real annual ROI.                        </mark class="bg-yellow-200">
-                    </p>
-                    <p class="font-sans text-sm text-slate-600 mt-3">
-                        BetML is a series of three separate projects (BetNBA, BetMLB, and BetNFL), which combine supervised learning and classical decision theory to place optimal sports bets to maximize profit over time. BetML introduces more effective strategies to think about risk in the betting domain than what traditional risk aversion functions offer. The project also improves upon the Kelly Criterion investment sizing strategy to include a time delay on bet scaling to make it more resilient against large swings and variance. 
-                        <br><br>BetNBA was tested last season and profited over 272% in real, legal betting environments over four months. Each model is built with its own nuances from the sport itself, such as BetMLB using exclusively player features instead of team features as the lineups and batting order change every day. The first iteration began in Fall 2020, and I now offer most of the models’ recommended bets at the link above. I have written a few academic papers/reports and blogs on the topics, and am looking to publish a complete paper on the methods and intricacies in the near future. 
-                    </p>
-                </div>
+            <!-- Blog Title -->
+            <div id="blog-title" class="mt-4 text-center w-80 mx-auto sm:w-2/5">
+                <p class="font-slab text-2xl sm:text-3xl">Recent Blog Posts</p>
+                <div class="h-2 mt-1 mx-auto text-center bg-cyan-150 w-14"></div>
+                <p class="font-sans text-slate-600 mt-4 text-sm sm:text-base">
+                    A place for me to share my projects, tutorials in ML and data science, 
+                    along with random thoughts about the industry as a whole.                
+                </p>
             </div>
 
-            <!-- Project Card -- Wordle -->
-            <div class="w-80 mb-10 sm:mb-20 sm:mx-auto sm:w-96">
-                <div class="mt-8 container flex justify-start">
-                    <div class="text-3xl font-slab  ">
-                        <span>Wo(R)d(L)e WIP</span>
-                        <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
-                    </div>
 
-                    <div>
-                        <ul class="text-slate-600 container ml-8 mt-2 flex justify-between">
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div>Paper</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                                        </svg>
-                                    </div>
-                                    <div>Link</div>
-                                </a>
-                            </li>
+            <div class="mt-8 container flex flex-wrap gap-x-4 justify-between gap-y-4 mx-auto">
+                
+                <div class="bg-white w-80 h-auto flex-shrink-0 flex-grow-0 shadow-2xl rounded-lg mx-auto">
+    
+                    <img src="./static/public/blog-images/cart-1-image.png" alt="" class="rounded-t-lg w-80 h-fit">
+                    <div class="text-xl text-center font-slab mt-4 px-4">Understanding Decision Trees [CART] in ML — Part I: Math & Intuition</div>
+                    <div class="mt-4 grid mx-auto grid-cols-2">
+                        <div>
+                            <div><img src="./static/public/icons/yt.svg" alt="" class="w-8 h-8 mx-auto text-center"></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Watch Video</p>
+                        </div>
+    
+                        <div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto text-center" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                            </svg></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Read Article</p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="w-80 bg-white flex-grow-0 flex-shrink-0 h-auto shadow-2xl rounded-lg mx-auto">
+    
+                    <img src="./static/public/blog-images/cart-2-image.png" alt="" class="rounded-t-lg">
+                    <!-- <div class="mt-4 mx-4">
+                        <ul class="flex justify-between">
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">Tutorial</li>
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">ML/Data</li>
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">Python</li>
+                        </ul>
+                    </div> -->
+    
+    
+    
+    
+                    <div class="text-xl text-center font-slab mt-4 px-4">Neural Network from Scratch — Part II: Backpropagation</div>
+                    
+                    <div class="mt-4 grid mx-auto grid-cols-2">
+                        <div>
+                            <div><img src="./static/public/icons/yt.svg" alt="" class="w-8 h-8 mx-auto text-center"></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Watch Video</p>
+                        </div>
+    
+                        <div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto text-center" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                            </svg></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Read Article</p>
+                        </div>
+    
+                        
+                    </div>
+                
+                </div>
+    
+                <div class="w-80 bg-white  flex-grow-0 flex-shrink-0 h-auto shadow-2xl rounded-lg mx-auto">
+    
+                    <img src="./static/public/blog-images/cart-2-image.png" alt="" class="rounded-t-lg">
+                    <!-- <div class="mt-4 mx-4">
+                        <ul class="flex justify-between">
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">Tutorial</li>
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">ML/Data</li>
+                            <li class="bg-cyan-150 text-slate-600 rounded-2xl w-fit px-4 text-center">Python</li>
                         </ul>
                     </div>
+    
+     -->
+    
+    
+                    <div class="text-xl text-center font-slab mt-4 px-4">Neural Network from Scratch — Part III: Coding it up</div>
+                    
+                    <div class="mt-4 grid mx-auto grid-cols-2">
+                        <div>
+                            <div><img src="./static/public/icons/yt.svg" alt="" class="w-8 h-8 mx-auto text-center"></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Watch Video</p>
+                        </div>
+    
+                        <div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto text-center" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                            </svg></div>
+                            <p class="font-slab text-md text-slate-600 text-center mx-auto">Read Article</p>
+                        </div>
+    
+                        
+                    </div>
+                
                 </div>
-
-                <div>
-                    <p class="font-slab  text-gray-900 text-2xl mt-4">
-                        <mark class="bg-yellow-200">
-                            Cracking viral game Wordle with superhuman performance using reinforcement learning. 
-                        </mark class="bg-yellow-200">
-                    </p>
-                    <p class="font-sans text-sm text-slate-600 mt-3">
-                        This project is being completed as part of my thesis/capstone for my M.S. at UC Berkeley. The goal of Wo(R)d(L)e is to build increasingly more robust algorithms to solve Wordle games to both minimize the average score and the amount of human information/intuition required. My early attempts use heuristic iterations based off of RegEx patterns and available words. The goal is now to implement more complex dynamic programming approaches until I arrive at a reinforcement learning solution that doesn’t require human knowledge of the English language. My inspiration for this project was reading the papers on AlphaGo and AlphaZero, the latter of which doesn’t use any human-expert knowledge to train, yet still outperforms the former 100-0 in test settings. 
-
-                        <br><br>This page will update as I improve the algorithms, so stay tuned!
-                    </p>
-                </div>
+    
             </div>
 
-            <!-- Project Card -- Disney -->
-            <div class="w-80 mb-10 sm:mb-20 sm:mx-auto sm:w-96">
-                <div class="mt-8 container flex justify-start">
-                    <div class="text-3xl font-slab  ">
-                        <span>Optimize Disney</span>
-                        <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
-                    </div>
-
-                    <div>
-                        <ul class="text-slate-600 container ml-8 mt-2 flex justify-between">
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div>Paper</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" class="flex">
-                                    <div class="mr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                                        </svg>
-                                    </div>
-                                    <div>Link</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-slab  text-gray-900 text-2xl mt-4">
-                        <mark class="bg-yellow-200">
-                            Using traffic forecasting and markov queuing theory to reduce Disneyland wait times by 25%.
-                        </mark class="bg-yellow-200">
-                    </p>
-                    <p class="font-sans text-sm text-slate-600 mt-3">
-                        p142 combines reinforcement learning, supervised ML, and classical decision analytics to make highly profitable bets, subject to my own risk aversion. 
-                        <br><br>
-                        Last NBA season, p142 profited 300% in legal betting mark class="bg-yellow-200"ets, and it will be retrained for the next NBA season.
-                        <br><br>
-                        The name p142 comes from my first ML class at UC Berkeley, IEOR 142. The code is not public, but all of the recommended bets can be found for free at the link above.
-
-                    </p>
-                </div>
-            </div>
-
-            <!-- See All Button -->
-            <div class="w-80 mb-10 mx-auto sm:w-96">
-                <button class="rounded bg-cyan-150 w-80 sm:w-96 h-16 hover:bg-cyan-100 sm:mt-48">
-                    <a class="font-slab text-2xl" href="">See All Projects</a>
+            <div class="my-10 mx-auto text-center">
+                <button class="bg-cyan-150 hover:bg-cyan-100 w-52 h-16 font-slab text-xl rounded">
+                    Go to Blog
                 </button>
             </div>
 
 
         </div>
-
-        <hr class="border-spacing-5">
-      
+        
 
         <hr class="border-spacing-5">
 
         <!-- About Me Title -->
-        <div id='about' class="mt-4 text-center w-4/4 mx-auto sm:w-3/5">
-            <p class="font-slab  text-2xl sm:text-3xl">About Me</p>
-            <div class="h-2 mt-1 mx-auto text-center bg-cyan-150 w-14"></div>
-            <p class="font-sans text-slate-600 mt-4 text-sm sm:text-base">
-                Hey, I'm Bennett Cohen, and I love solving problems with machine learning. By day, I work as a part-time ML engineer and software developer, integrating ML and data science into projects for clients across financial, legal, and real-estate sectors. By night, I'm finishing my Masters of Science at the University of California, Berkeley, specializing in Applied Machine Learning & Optimization through the Department of Industrial Engineering & Operations Research (shortened to just IEOR). I received my Bachelors of Science in IEOR from UC Berkeley as well, with a minor in Data Science. 
-                <br><br>When I'm not staring at a computer screen, you can find me snowboarding in Lake Tahoe, working out with my friends, or cooking dinner for my family. Before and during college, I spent a few years as a freelance graphic designer, designing websites and brand identities for clients and startups. I was actually going to go to art school before I landed in engineering. 
-                <br><br>I'm looking to apply ML techniques and optimization to address issues in our world like education inequality, climate change, and interpersonal connection/mental health. If you're looking for a one-off job, hiring for a full-time, or simply want to chat about the state of the world, freel free to reach out at <a href="mailto: bennettcohen@berkeley.edu"><u>bennettcohen@berkeley.edu</u></a>.
-            </p>
+        <div id="about">
+            <div id='about' class="mt-4 text-center w-4/4 mx-auto sm:w-3/5">
+                <p class="font-slab  text-2xl sm:text-3xl">About Me</p>
+                <div class="h-2 mt-1 mx-auto text-center bg-cyan-150 w-14"></div>
+                <p class="font-sans text-slate-600 mt-4 text-sm sm:text-base">
+                    Hey, I'm Bennett Cohen, and I love solving problems with machine learning. By day, I work as a part-time ML engineer and software developer, integrating ML and data science into projects for clients across financial, legal, and real-estate sectors. By night, I'm finishing my Masters of Science at the University of California, Berkeley, specializing in Applied Machine Learning & Optimization through the Department of Industrial Engineering & Operations Research (shortened to just IEOR). I received my Bachelors of Science in IEOR from UC Berkeley as well, with a minor in Data Science. 
+                    <br><br>When I'm not staring at a computer screen, you can find me snowboarding in Lake Tahoe, working out with my friends, or cooking dinner for my family. Before and during college, I spent a few years as a freelance graphic designer, designing websites and brand identities for clients and startups. I was actually going to go to art school before I landed in engineering. 
+                    <br><br>I'm looking to apply ML techniques and optimization to address issues in our world like education inequality, climate change, and interpersonal connection/mental health. If you're looking for a one-off job, hiring for a full-time, or simply want to chat about the state of the world, freel free to reach out at <a href="mailto: bennettcohen@berkeley.edu"><u>bennettcohen@berkeley.edu</u></a>.
+                </p>
+            </div>
+    
+            <div class="my-10 mx-auto text-center">
+                <button class="bg-cyan-150 hover:bg-cyan-100 w-52 h-16 font-slab text-xl rounded">
+                    My Resume
+                </button>
+            </div>
         </div>
 
         <hr class="border-spacing-5 mt-10">

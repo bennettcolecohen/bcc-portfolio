@@ -11,14 +11,18 @@ templates = Jinja2Templates(directory="templates")
 def home(request: Request): 
     return templates.TemplateResponse("index.html", {"request": request})
 
+@app.get("/projects")
+def projects(request: Request): 
+    return templates.TemplateResponse("projects.html", {"request": request})
+
+@app.get('/blog')
+def blog(request: Request): 
+    return templates.TemplateResponse('blog.html', {"request": request})
+
+@app.get("/projects/{project_name}")
+def betml(project_name: str, request: Request): 
+    return templates.TemplateResponse(f"projects/{project_name}.html", {"request": request})
+
 @app.get("/work")
 def work(request: Request): 
     return templates.TemplateResponse("work.html", {"request": request})
-
-@app.get("/betml")
-def betml(request: Request): 
-    return templates.TemplateResponse("betml.html", {"request": request})
-
-@app.get("/betmlb")
-def betmlb(request: Request):
-    return templates.TemplateResponse("betmlb.html", {"request": Request})
