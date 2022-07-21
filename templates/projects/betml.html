@@ -7,8 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../static//dist/output.css" rel="stylesheet">
-        <link rel="mask-icon" href="favicon.svg">
-    </head>
+        <link rel="icon" type="image/x-icon" href="/static/public/icons/fav.png">    </head>
     <body class="bg-slate-50 pt-8 px-8 overflow-x-clip sm:pt-16 sm:px-12">
 
         <!-- Header -->
@@ -51,45 +50,73 @@
         </header>
         
 
-        <!-- Hero -->
-        <div class="flex flex-col container mt-4 md:mt-12 md:flex-row md:justify-between">
-            <div class="md:w-2/4">
-                <p class="font-slab  text-4xl md:text-5xl md:w-10/12">
-                    BetML
-                </p>
-                <div class="h-2 mt-1 bg-cyan-150 w-14"></div>
+        <div class="mt-8 md:md-12 grid grid-cols-1 md:grid-cols-2">
+            <div id="left" class="md:w-2/4">
+                <div class="flex flex-row justify-between">
+                    <div class="font-slab text-gray-900 text-4xl">BetML</div>
+                    <div class="font-sans text-slate-600 text-base flex flex-row md:hidden">
+                        <a href="#resources"><div><mark class="bg-cyan-150">Papers & Blog Posts</mark></div></a>
+                    </div>
+                </div>
+                
+                <hr class="h-2 mt-1 bg-cyan-150 w-14">
                 <p class="mt-4 font-slab text-3xl">
                     <mark class="bg-yellow-200">Robust, ML-powered sports betting engine with <u>272% real ROI</u>.</mark>
                 </p>
-
-                <div class="mt-2 font-sans text-slate-300 text-xs md:text-sm">
-                    a project by <a href="/"><u>Bennett Cohen</u></a>
-                </div>
-                
             </div>
+        </div>
+
+        <div class="mt-8 md:md-12 grid grid-cols-1 md:grid-cols-2">
+            <div class="md:w-2/4 font-sans text-sm md:text-base text-slate-600">
+                BetML is a set of three separate projects (BetNBA, BetMLB, and BetNFL [WIP]), which 
+                combine supervised learning and classical decision theory to place optimal sports bets 
+                to maximize profit over time. BetML introduces more effective strategies to consider 
+                risk than what traditional risk aversion functions offer. The project also improves 
+                upon the Kelly Criterion investment sizing strategy to include a time delay on bet scaling 
+                to make it more resilient against large swings and variance. 
+                <br><br>
+                BetNBA was tested last season and profited over 272% in real, legal betting environments 
+                over four months. Each model is built with its own nuances from the sport itself, such as 
+                BetMLB using exclusively player features instead of team features as the lineups and 
+                batting order change every day. The first iteration began in Fall 2020, and I now offer 
+                most of the models' recommended bets at the link above. I have written a few academic 
+                papers/reports and blogs on the topics, and am looking to publish a complete paper on 
+                the methods and intricacies in the near future.
+            </div>
+            <div class="md:w-2/4 font-sans text-sm md:text-base text-slate-600">
+                BetML is a set of three separate projects (BetNBA, BetMLB, and BetNFL [WIP]), which 
+                combine supervised learning and classical decision theory to place optimal sports bets 
+                to maximize profit over time. BetML introduces more effective strategies to consider 
+                risk than what traditional risk aversion functions offer. The project also improves 
+                upon the Kelly Criterion investment sizing strategy to include a time delay on bet scaling 
+                to make it more resilient against large swings and variance. 
+                <br><br>
+                BetNBA was tested last season and profited over 272% in real, legal betting environments 
+                over four months. Each model is built with its own nuances from the sport itself, such as 
+                BetMLB using exclusively player features instead of team features as the lineups and 
+                batting order change every day. The first iteration began in Fall 2020, and I now offer 
+                most of the models' recommended bets at the link above. I have written a few academic 
+                papers/reports and blogs on the topics, and am looking to publish a complete paper on 
+                the methods and intricacies in the near future.
+            </div>
+        </div>
+
+        
+
 
             
 
 
-
-        </div>
-
-        <!-- <hr class="mt-8 border-spacing-5"> -->
         
 
+       
 
-
-
-        
-
-    
+         
 
           
 
 
            
-
-        <script src="static/js/index.js" async defer></script>
     </body>
 
 </html>
