@@ -23,6 +23,10 @@ def blog(request: Request):
 def betml(project_name: str, request: Request): 
     return templates.TemplateResponse(f"projects/{project_name}.html", {"request": request})
 
-@app.get("/work")
-def work(request: Request): 
-    return templates.TemplateResponse("work.html", {"request": request})
+@app.get("/header")
+def header(request: Request): 
+    return templates.TemplateResponse("header.html", {"request": request})
+
+@app.get("/footer")
+def footer(request: Request): 
+    return templates.TemplateResponse("footer.html", {"request": request})
