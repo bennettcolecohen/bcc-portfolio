@@ -11,7 +11,7 @@ module.exports = {
         primary: "#22223B", 
         sec: "#4A4E69", 
         sealight: "#E9F7F2", 
-        sea: "#5DFDCB", 
+        sea: "#F15025", 
         accent: "#6E8894"
       }
     },
