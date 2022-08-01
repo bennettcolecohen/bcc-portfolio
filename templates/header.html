@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -7,9 +6,38 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./static//dist/output.css" rel="stylesheet">
+        <script src="static/js/index.js" async defer></script>
     </head>
     <body>
-        <header class="text-gray-900 font-slab  ">
+        <header class="font-prim text-prim container items-center flex justify-between mt-8">
+            <div>
+                <a href="/" class="flex items-center">
+                    <div>
+                        <span class="self-center text-6xl whitespace-nowrap ">BC</span>
+                        <div class="h-2 w-12 bg-sea text-center -my-2 mx-auto rounded-full"></div>
+                    </div>
+                <img src="./static/public/headshot.jpg" class="ml-8 h-20 w-20 rounded-full" alt="Bennett Cohen Headshot">
+                </a>
+            </div>
+            <button class="md:hidden" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <div id = 'nav' class="fixed top-20 -right-full md:right-0 transition-all bg-sea rounded-2xl md:rounded-none px-16 md:px-0 md:bg-white md:relative md:top-0">
+                <ul class="flex flex-col p-4 py-20 md:py-4 md:flex-row text-2xl space-y-10 md:space-y-0 md:space-x-16"> 
+                    <li><a href="" class="link link-underline link-underline-black text-prim">About Me</a></li>
+                    <li><a href="" class="link link-underline link-underline-black text-prim">Projects</a></li>
+                    <li><a href="" class="link link-underline link-underline-black text-prim">Blogs & Videos</a></li>
+                    <li><a href="" class="link link-underline link-underline-black text-prim">Resume</a></li>
+            
+                </ul>
+            </div>
+                
+    
+        </header>
+        <!-- <header class="text-gray-900 font-slab  ">
             <div class="container items-center flex justify-between">
                 <div class="font-slab text-5xl"><a href="/">BC</a></div>
                 <button class="sm:hidden" id="toggle">
@@ -43,7 +71,7 @@
                     </ul>
                 </nav>
             </div>
-        </header>
+        </header> -->
         
         <script src="" async defer></script>
     </body>
