@@ -816,6 +816,18 @@ video {
   height: 0.25rem;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -864,6 +876,14 @@ video {
 
 .w-2\/4 {
   width: 50%;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .flex-shrink-0 {
