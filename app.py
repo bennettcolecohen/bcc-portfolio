@@ -19,8 +19,18 @@ templates = Jinja2Templates(directory="templates")
 #     return engine
 
 @app.get("/")
-def home(request: Request): 
+def index(request: Request): 
     return templates.TemplateResponse("index.html", {"request": request})
+
+@app.get("/projects")
+def projects(request: Request): 
+    return templates.TemplateResponse("projects.html", {"request": request})
+
+@app.get("/blog")
+def projects(request: Request): 
+    return templates.TemplateResponse("blog.html", {"request": request})
+
+
 
 # @app.get("/projects")
 # def projects(request: Request): 
