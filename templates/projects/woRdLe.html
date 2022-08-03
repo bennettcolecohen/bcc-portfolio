@@ -3,20 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Projects | Bennett Cohen</title>
+        <title>Wo[R]d[L]e | Bennett Cohen</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./static//dist/output.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="static/public/icons/fav.png">
+        <link href="/static//dist/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/static/public/icons/fav.png">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
-        <script> 
-            $(function(){
-              $("#header").load("/header"); 
-              $("#footer").load("/footer"); 
-            });
-        </script> 
-
         
     </head>
     <body class="px-8">
@@ -27,7 +20,7 @@
                         <span class="self-center text-6xl whitespace-nowrap ">BC</span>
                         <div class="h-1 w-12 bg-sea text-center -my-2 mx-auto rounded-full"></div>
                     </div>
-                <img src="./static/public/headshot.jpg" class="ml-8 h-20 w-20 rounded-full" alt="Bennett Cohen Headshot">
+                <img src="/static/public/headshot.jpg" class="ml-8 h-20 w-20 rounded-full" alt="Bennett Cohen Headshot">
             </div>
 
             <button type='button' class="md:hidden" id="toggle">
@@ -58,65 +51,46 @@
     
         </header>
 
-        <div class="mt-12 md:mt-24 text-center md:text-left">
-        
-            <div class="mt-2 md:mt-4 font-prim text-prim text-5xl md:text-7xl">My Projects</div>
-            <div class=" text-sea font-semibold text-lg md:text-2xl md:w-2/4">
-                Personal & academic projects where I apply the theoretical concepts 
-                to solve real problems . . . or just build something kinda coo!
+        <div class="mt-12 md:mt-18 flex flex-col md:flex-row justify-start">
+            <div class="md:w-2/4">
+                <div class="mt-2 md:mt-4 font-prim text-prim text-5xl md:text-7xl">Wo[R]d[L]e</div>
+                <div class=" text-sea font-semibold text-lg md:text-2xl">
+                    Cracking viral game Wordle w/ Deep Reinforcement Learning
+                </div> 
+                <p class="text-sm md:text-md text-sec mt-4">
+                    This project is being completed as part of my thesis/capstone for my M.S. at UC Berkeley. The goal of Wo(R)d(L)e is to build increasingly more robust algorithms to solve Wordle games to both minimize the average score and the amount of human information/intuition required. My early attempts use heuristic iterations based off of RegEx patterns and available words. The goal is now to implement more complex dynamic programming approaches until I arrive at a reinforcement learning solution that doesn’t require human knowledge of the English language. My inspiration for this project was reading the papers on AlphaGo and AlphaZero, the latter of which doesn’t use any human-expert knowledge to train, yet still outperforms the former 100-0 in test settings. 
+                </p>
             </div>
-            <p class="text-sm md:text-md text-sec mt-4">
-                Each project has its own page with links to papers and other resources.
-            </p>
+
+            <div class="md:w-2/4">
+                
+            </div>
         </div>
- 
 
 
-       <div class="mt-8 mx-auto flex gap-x-8 gap-y-8 flex-wrap">
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Personal Project + Income Source</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/betml-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-white text-2xl">
-                        <u>BetML</u>: 272% ROI with ML-powered sports betting engines.
-                    </span>
-                </div>
-            </div>
+        <div class="text-center md:text-left mt-10 md:mt-18 text-4xl md:text-5xl font-prim mb-10 md:mb-16">Resources</div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Personal Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/wordle-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-prim text-2xl">
-                        <u>Wo[R]d[L]e</u>: Cracking viral game Wordle w/ Deep Reinforcement Learning
-                    </span>
-                </div>
-            </div>
+        <div class="md:w-2/4">
+            <!-- <p class="text-sec text-xs md:text-sm mt-2">Academic Paper</p> -->
+            <div class="text-sea text-lg font-semibold">A Supervised Learning Approach to NBA Game Prediction</div>
+            <p class="text-sec text-xs md:text-sm mt-2">
+                The first attempt to outperform other published models at predicting NBA game outcomes. Worked on 
+                with fellow M.S. in IEOR at Berkeley, Christopher Landrebe.
+            </p>
+            <p class="text-sec text-xs md:text-sm mt-4"><u>Read this paper →</u></p>
+        </div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Consulting Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/disney-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-white text-2xl">
-                        <u>Disney-Q</u>: Reducing Disneyland wait time by 25% with traffic forecasting and Markov queueing theory.
-                    </span>
-                </div>
-            </div>
+        <div class="md:w-2/4 mt-8">
+            <!-- <p class="text-sec text-xs md:text-sm mt-2">Academic Paper</p> -->
+            <div class="text-sea text-lg font-semibold">A Decision Analytics Approach to Sports Betting</div>
+            <p class="text-sec text-xs md:text-sm mt-2">
+                The first written piece about my methods to apply classical decision analytics to the problem 
+                of sports betting. This builds off of my initial work on SL models for NBA.
+            </p>
+            <p class="text-sec text-xs md:text-sm mt-4"><u>Read this paper →</u></p>
+        </div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Consulting Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/sb-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-prim text-2xl">
-                        <u>Sports Basement</u>: Optimizing Ski Gear Rental Queuing System.
-                    </span>
-                </div>
-            </div>
-
-           
-            
-       </div>
-
+      
        
 
 

@@ -6,17 +6,10 @@
         <title>My Projects | Bennett Cohen</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./static//dist/output.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="static/public/icons/fav.png">
+        <link href="/static//dist/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/static/public/icons/fav.png">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
-        <script> 
-            $(function(){
-              $("#header").load("/header"); 
-              $("#footer").load("/footer"); 
-            });
-        </script> 
-
         
     </head>
     <body class="px-8">
@@ -27,7 +20,7 @@
                         <span class="self-center text-6xl whitespace-nowrap ">BC</span>
                         <div class="h-1 w-12 bg-sea text-center -my-2 mx-auto rounded-full"></div>
                     </div>
-                <img src="./static/public/headshot.jpg" class="ml-8 h-20 w-20 rounded-full" alt="Bennett Cohen Headshot">
+                <img src="/static/public/headshot.jpg" class="ml-8 h-20 w-20 rounded-full" alt="Bennett Cohen Headshot">
             </div>
 
             <button type='button' class="md:hidden" id="toggle">
@@ -58,65 +51,48 @@
     
         </header>
 
-        <div class="mt-12 md:mt-24 text-center md:text-left">
-        
-            <div class="mt-2 md:mt-4 font-prim text-prim text-5xl md:text-7xl">My Projects</div>
-            <div class=" text-sea font-semibold text-lg md:text-2xl md:w-2/4">
-                Personal & academic projects where I apply the theoretical concepts 
-                to solve real problems . . . or just build something kinda coo!
+        <div class="mt-12 md:mt-18 flex flex-col md:flex-row justify-start">
+            <div class="md:w-2/4">
+                <div class="mt-2 md:mt-4 font-prim text-prim text-5xl md:text-7xl">BetML</div>
+                <div class=" text-sea font-semibold text-lg md:text-2xl">
+                    A series of robust, ML-powered sports betting engines with 272% real annual ROI.
+                </div> 
+                <p class="text-sm md:text-md text-sec mt-4">
+                    BetML is a set of three separate projects (BetNBA, BetMLB, and BetNFL [WIP]), which combine supervised learning and classical decision theory to place optimal sports bets to maximize profit over time. BetML introduces more effective strategies to consider risk than what traditional risk aversion functions offer. The project also improves upon the Kelly Criterion investment sizing strategy to include a time delay on bet scaling to make it more resilient against large swings and variance. 
+                    <br><br>
+                    BetNBA was tested last season and profited over 272% in real, legal betting environments over four months. Each model is built with its own nuances from the sport itself, such as BetMLB using exclusively player features instead of team features as the lineups and batting order change every day. The first iteration began in Fall 2020, and I now offer most of the models’ recommended bets at the link above. I have written a few academic papers/reports and blogs on the topics, and am looking to publish a complete paper on the methods and intricacies in the near future.
+                </p>
             </div>
-            <p class="text-sm md:text-md text-sec mt-4">
-                Each project has its own page with links to papers and other resources.
-            </p>
+
+            <div class="md:w-2/4">
+                
+            </div>
         </div>
- 
 
 
-       <div class="mt-8 mx-auto flex gap-x-8 gap-y-8 flex-wrap">
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Personal Project + Income Source</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/betml-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-white text-2xl">
-                        <u>BetML</u>: 272% ROI with ML-powered sports betting engines.
-                    </span>
-                </div>
-            </div>
+        <div class="text-center md:text-left mt-10 md:mt-18 text-4xl md:text-5xl font-prim mb-10 md:mb-16">Resources</div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Personal Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/wordle-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-prim text-2xl">
-                        <u>Wo[R]d[L]e</u>: Cracking viral game Wordle w/ Deep Reinforcement Learning
-                    </span>
-                </div>
-            </div>
+        <div class="md:w-2/4">
+            <!-- <p class="text-sec text-xs md:text-sm mt-2">Academic Paper</p> -->
+            <div class="text-sea text-lg font-semibold">A Supervised Learning Approach to NBA Game Prediction</div>
+            <p class="text-sec text-xs md:text-sm mt-2">
+                The first attempt to outperform other published models at predicting NBA game outcomes. Worked on 
+                with fellow M.S. in IEOR at Berkeley, Christopher Landrebe.
+            </p>
+            <p class="text-sec text-xs md:text-sm mt-4"><u>Read this paper →</u></p>
+        </div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Consulting Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/disney-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-white text-2xl">
-                        <u>Disney-Q</u>: Reducing Disneyland wait time by 25% with traffic forecasting and Markov queueing theory.
-                    </span>
-                </div>
-            </div>
+        <div class="md:w-2/4 mt-8">
+            <!-- <p class="text-sec text-xs md:text-sm mt-2">Academic Paper</p> -->
+            <div class="text-sea text-lg font-semibold">A Decision Analytics Approach to Sports Betting</div>
+            <p class="text-sec text-xs md:text-sm mt-2">
+                The first written piece about my methods to apply classical decision analytics to the problem 
+                of sports betting. This builds off of my initial work on SL models for NBA.
+            </p>
+            <p class="text-sec text-xs md:text-sm mt-4"><u>Read this paper →</u></p>
+        </div>
 
-            <div class="mx-auto md:mx-0 flex-grow-0 flex-shrink-0  backdrop:cursor-pointer duration-300 ease-in-out transition-transform transform hover:-translate-y-2">
-                <p class="text-sec text-xs md:text-sm ml-3">Consulting Project</p>
-                <div class="w-72 h-72 rounded-lg shadow-xl">
-                    <img class="object-fill w-72 h-72 shadow-xl rounded-xl z-10" src="static/public/blog-images/sb-background.png" alt="BetML: 272% ROI with ML-powered sports betting engines.">
-                    <span class="absolute left-0 top-0 z-30 mt-6 ml-3 px-2 py-2 font-prim text-prim text-2xl">
-                        <u>Sports Basement</u>: Optimizing Ski Gear Rental Queuing System.
-                    </span>
-                </div>
-            </div>
-
-           
-            
-       </div>
-
+      
        
 
 
